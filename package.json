@@ -1,0 +1,17 @@
+{
+  "name": "llm-prompt-router",
+  "version": "1.0.0",
+  "description": "LLM-Powered Prompt Router for Intent Classification — Partnr GPP Task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "logs": "node -e \"require('./logger').readLogs().forEach(l => console.log(JSON.stringify(l, null, 2)))\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.6.1",
+    "groq-sdk": "^1.1.1"
+  }
+}
